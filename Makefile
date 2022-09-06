@@ -1,8 +1,9 @@
 CC=gcc
 OBJCOPY=objcopy
-BASEURL=https://justine.lol/cosmopolitan
-AMALGAMATION=cosmopolitan.zip
-LIBCOSMO_SHA256_EXPECTED=11252b76c344886f52f92a1d9d198a2970544becc27b14742240f68570ae94b7
+BASEURL=https://worker.jart.workers.dev
+AMALGAMATION=cosmopolitan-amalgamation-2.0.zip
+LIBCOSMO_SHA256_EXPECTED=\
+2228cd5924c001b2d8c8efcc9ddacaab354ba4c99a3e0c8858098e2c3f2e3fdb
 
 hello.com: libcosmo hello.c
 	$(CC) -g -Os -static -fno-pie -no-pie -nostdlib -nostdinc                  \
